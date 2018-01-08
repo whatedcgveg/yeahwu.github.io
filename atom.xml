@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://yeahwu.github.io/"/>
   <updated>2018-01-06T09:07:17.028Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://yeahwu.github.io/</id>
   
   <author>
     <name>yeahwu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>本博搭建过程</title>
-    <link href="http://yoursite.com/2018/01/05/%E6%9C%AC%E5%8D%9A%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/"/>
-    <id>http://yoursite.com/2018/01/05/本博搭建过程/</id>
+    <link href="https://yeahwu.github.io/2018/01/05/%E6%9C%AC%E5%8D%9A%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/"/>
+    <id>https://yeahwu.github.io/2018/01/05/本博搭建过程/</id>
     <published>2018-01-05T03:17:22.081Z</published>
     <updated>2018-01-06T09:07:17.028Z</updated>
     
@@ -32,17 +32,17 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+      <category term="Linux" scheme="https://yeahwu.github.io/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+      <category term="Linux" scheme="https://yeahwu.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017/10/30/hello-world/"/>
-    <id>http://yoursite.com/2017/10/30/hello-world/</id>
+    <link href="https://yeahwu.github.io/2017/10/30/hello-world/"/>
+    <id>https://yeahwu.github.io/2017/10/30/hello-world/</id>
     <published>2017-10-30T08:49:42.748Z</published>
     <updated>2017-10-30T08:49:42.748Z</updated>
     
