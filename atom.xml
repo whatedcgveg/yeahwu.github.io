@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yeahwu.github.io/"/>
-  <updated>2018-01-11T08:27:05.791Z</updated>
+  <updated>2018-01-11T09:24:07.529Z</updated>
   <id>https://yeahwu.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://yeahwu.github.io/2018/01/05/%E6%9C%AC%E5%8D%9A%E6%90%AD%E5%BB%BA%E8%BF%87%E7%A8%8B/"/>
     <id>https://yeahwu.github.io/2018/01/05/本博搭建过程/</id>
     <published>2018-01-05T03:17:22.081Z</published>
-    <updated>2018-01-11T08:27:05.791Z</updated>
+    <updated>2018-01-11T09:24:07.529Z</updated>
     
     <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>理由：其实就想找一个可以胡言乱语，没审查，没敏感词的地方。</p><p>本博基于<code>ubuntu16.04+git v2.7.4+NodeJS v6.9.1+hexo v3.2.2</code> 不同平台和版本实际操作可能略不同。<br><a id="more"></a></p><h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h4><p><code>sudo apt install git</code></p><h4 id="安装npm"><a href="#安装npm" class="headerlink" title="安装npm"></a>安装npm</h4><p><code>sudo apt install npm</code></p><h4 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h4><p><code>curl -sSL https://nodejs.org/dist/v6.10.0/node-v6.10.0-linux-x64.tar.xz|tar -xvzf - -C /usr/bin/</code></p><h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><h5 id="1：安装hexo"><a href="#1：安装hexo" class="headerlink" title="1：安装hexo"></a>1：安装hexo</h5><p><code>sudo npm install -g hexo</code></p><h5 id="2：执行init命令初始化hexo-生成blog文件，就是你的博客根目录，所有的操作都在里面进行。"><a href="#2：执行init命令初始化hexo-生成blog文件，就是你的博客根目录，所有的操作都在里面进行。" class="headerlink" title="2：执行init命令初始化hexo,生成blog文件，就是你的博客根目录，所有的操作都在里面进行。"></a>2：执行init命令初始化hexo,生成blog文件，就是你的博客根目录，所有的操作都在里面进行。</h5><p><code>hexo init blog</code></p><h5 id="3：生成静态网页"><a href="#3：生成静态网页" class="headerlink" title="3：生成静态网页"></a>3：生成静态网页</h5><p><code>cd blog</code><br><code>hexo g</code></p><h5 id="4：启动本地服务，进行文章预览调试"><a href="#4：启动本地服务，进行文章预览调试" class="headerlink" title="4：启动本地服务，进行文章预览调试"></a>4：启动本地服务，进行文章预览调试</h5><p><code>hexo server</code></p><p>浏览器输入 <a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></p><h3 id="配置GitHub"><a href="#配置GitHub" class="headerlink" title="配置GitHub"></a>配置GitHub</h3><h5 id="1：建立Repository"><a href="#1：建立Repository" class="headerlink" title="1：建立Repository"></a>1：建立Repository</h5><h5 id="2：建立与你用户名对应的仓库，仓库名必须为【yourname-github-io】，固定写法"><a href="#2：建立与你用户名对应的仓库，仓库名必须为【yourname-github-io】，固定写法" class="headerlink" title="2：建立与你用户名对应的仓库，仓库名必须为【yourname.github.io】，固定写法"></a>2：建立与你用户名对应的仓库，仓库名必须为【yourname.github.io】，固定写法</h5><h5 id="3：建立关联"><a href="#3：建立关联" class="headerlink" title="3：建立关联"></a>3：建立关联</h5><p><code>vi /users/blog/_config.yml</code></p><p>翻到最下面，改成：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line"></div><div class="line">type: git</div><div class="line"></div><div class="line">repo: https://github.com/yourname/yourname.github.io.git</div><div class="line"></div><div class="line">branch: master</div></pre></td></tr></table></figure><h5 id="4：执行命令："><a href="#4：执行命令：" class="headerlink" title="4：执行命令："></a>4：执行命令：</h5><p><code>npm install hexo-deployer-git –save</code></p><h5 id="5：然后，执行配置命令："><a href="#5：然后，执行配置命令：" class="headerlink" title="5：然后，执行配置命令："></a>5：然后，执行配置命令：</h5><p><code>hexo deploy</code></p><p>在浏览器中输入 <a href="http://yourname.github.io/" target="_blank" rel="external">http://yourname.github.io/</a></p><h5 id="6：每次部署命令"><a href="#6：每次部署命令" class="headerlink" title="6：每次部署命令:"></a>6：每次部署命令:</h5><p><code>cd blog</code><br><code>hexo g -d</code></p><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><p><code>hexo new&quot;postname&quot;</code> 新建文章</p><p><code>hexo new page&quot;pagename&quot;</code> 新建页面</p><p><code>hexo clean</code>  清理缓存</p><p><code>hexo generate</code>  生成静态页面</p><p><code>hexo server</code>  开启预览访问端口</p><p><code>hexo deploy</code> 将.deploy目录部署到GitHub</p><p>博客文章在/blog/source/_posts, 文章支持Markdown语法。如果想修改头像可以直接在主题的_config.yml文件里面修改，友情链接，之类的都在这里。</p><p>上面的是Linux搭建方法，相信大家用Windows的比较多。推荐朋友的<a href="https://blog.cat73.org/2016/06/08/github-hexo/#more" target="_blank" rel="external">Windows搭建教程</a></p><p>关于主题，可以到github上搜，一大堆，本博太懒，用的是hexo官方主题，随便改了改。</p>]]></content>
     
@@ -34,8 +34,6 @@
     
       <category term="Linux" scheme="https://yeahwu.github.io/categories/Linux/"/>
     
-    
-      <category term="Testing" scheme="https://yeahwu.github.io/tags/Testing/"/>
     
       <category term="Linux" scheme="https://yeahwu.github.io/tags/Linux/"/>
     
